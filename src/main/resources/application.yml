@@ -1,0 +1,7 @@
+spring:
+    datasource:
+        url: jdbc:${DATABASE_CONNECTION:postgresql://localhost:5433/university}
+        username: ${DATABASE_USERNAME:postgres}
+        password: ${DATABASE_PASSWORD:postgres}
+    liquibase:
+        change-log: classpath:db/changelog/university-changelog.xml
